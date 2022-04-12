@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+
+    <link rel='stylesheet' href="style.css">
+    <!-- font awesome cdnlink - for + X (firstone) and lock icon(second icon) -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css'>
+    
+</head>
+<body>
+    <div class="toolbox-container">
+        <div class="toolbox-priority-container">
+            <div class="red color" ></div>
+            <div class="green color" ></div>
+            <div class="yellow color" ></div> <!--now box ready now we'll style it -->
+            <div class="blue color"></div>
+        </div>
+
+        <div class="action-button-container">
+            <div class="add-button">
+                <i class="fa-solid fa-plus"></i> 
+                <!-- for "+" symbol -->
+            </div>
+            <div class="remove-button">
+                <i class = "fa-solid fa-xmark "></i>
+                <!-- for "X" symbol -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ticket box - main container hold all tickets -->
+    <div class="main-container">
+        <!-- <div class="ticket-container">
+            <div class="ticket-color red"></div>
+            <div class="ticket-id"> </div>
+            <div class="task-area" contenteditable="false">
+                apple
+                <div class="ticket-lock">
+                    <i class = "fa-solid fa-lock"></i>
+                    
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <!-- modal container -->
+    <div class="modal-container">
+        <textarea class="textarea-container" spellcheck="false" placeholder="Enter your task"></textarea> 
+        <!-- spellcheck = false - red line under the word disappears even if spelling is wrong-->
+        <!-- placehodler is for the deafult text (type here) -->
+        <div class="priority-colors-container">
+            <div class="red priority-color" ></div>
+            <div class="green priority-color" ></div>
+            <div class="yellow priority-color" ></div> 
+            <div class="blue active priority-color"></div>
+        </div>
+    </div>
+
+
+    <!-- cdn for shortid - for generating random id - for local storage -->
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <!-- ALWAYS ADD SCRIPT IN END SO THAT WE APPLY DOM AFTER WHOLE HTML IS LOADED-->
+    <script src="./script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+    /* asterisk iss for selecting everything in html */
+    box-sizing: border-box;
+    /* by defult border ouside normal size of box of box - 10px border - 1px then total box - 12px(1px border each side) */
+    /*  but borderbox prop never lets main box side to change so it will make box 8px to add border of 1px each side */
+
+}
+
+body{
+    margin : 0; /* 0 - so it sticks to the absoulte left*/
+    padding: 0;
+}
+
+.toolbox-container{
+    height: 5rem;
+    
+    background-color: #c2b992;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.toolbox-container >* {
+    /* apple these property to all childrenof toolbox-container */
+
+    margin-left: 5rem;
+    border-radius: 3px;
+}
+
+.toolbox-priority-container{
+    height: 3.5rem;
+    width: 18rem;
+    background-color: #92866f;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.action-button-container{
+    height: 3.5rem;
+    width: 7rem;
+    background-color: #92866f;
+}
+
+.action-button-container{
+    font-size: 2rem;
+    color: #382522;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.color{ /* this is also styling pirority class ke boxes uski arrangement neeche alag hai but dabbe yahi se ban rahe hai*/
+    height: 2rem;
+    width: 3rem;
+}
+
+.action-button-container>*:hover{
+    color: coral;
+}
+
+.toolbox-priority-container>*:hover{
+    height: 2.1rem;
+    width: 3.1rem;
+}
+
+.modal-container{
+    height: 50vh;
+    width: 45vw;
+    background-color: #92866f;
+    position: absolute;
+    top: calc((100vh - 50vh)/2); /* 10rem we have to subtract beciuse that is default margin of 10rem so just 100vh/2 doesnt actually bring it in centre now this is most efficient way*/
+    left: calc((100vw - 45vw)/2);
+    display: none; /* because colors iske andar lagane hai nad by defaut we dont want to see it*/
+    /* to bring it in center we use 50 vh  50 vp but not directly we have to use 100-50vh and 100-50vp but for this we need the calc method in css */
+    /* position absolute makes an elements fixed irrespective of screen movement or any scrolling */
+}
+
+/* calc is a css method - helps in calculating 100-50vh 100-50vw */
+
+
+.textarea-container{
+    height:100%; /*parent's 100% */
+    width: 75%;
+    outline: none;
+    border: none;
+    background-color: #dfe4ea;
+    resize: none; /* text area is by default resizable*/
+    padding:2rem;
+    font-size: 2rem;
+
+}
+
+.priority-colors-container{
+    height:100%;
+    width:25%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
+}
+
+.active{
+    border: 3px solid black;
+    
+}
+
+.main-container{
+    display:flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    /* gap between two tickets */
+
+}
+
+.ticket-container{
+    height:12rem;
+    width: 15rem;
+    background-color:#d1b391;
+    
+}
+
+.ticket-color{
+    height: 1rem;
+    background-color:#03caf6;
+}
+
+.red{
+    background-color: #e54275;
+}
+
+.green{
+    background-color:#5ef8a4;
+}
+
+.yellow{
+    background-color: #dbe67a;
+}
+
+.blue{
+    background-color: #03caf6;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color:#d3d8b1;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.task-area{
+    height: calc(100% - 1rem - 2rem); 
+    font-size: 1.5rem;
+    padding: 5px;
+    overflow-wrap: break-word;
+}
+
+.ticket-lock{
+    display:flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    
+    width: 15rem;
+    background-color:#d1b391;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
