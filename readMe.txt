@@ -11,4 +11,4 @@ generate specific id for every tasks
 filter tasks on the basis of prioirty or see all tasks
 locally stores all your tasks so you dont lose taska even after refreshing
 
-all the functionality is given usimg Document Object Module In nodeJS
+all the functionality is given usimg Document Object Module in JavaScript and the web page is made using HTMl a CSS
