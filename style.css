@@ -1,5 +1,5 @@
 *{
-    /* asterisk iss for selecting everything in html */
+    /* asterisk is for selecting everything in html */
     box-sizing: border-box;
     /* by defult border ouside normal size of box of box - 10px border - 1px then total box - 12px(1px border each side) */
     /*  but borderbox prop never lets main box side to change so it will make box 8px to add border of 1px each side */
@@ -7,7 +7,7 @@
 }
 
 body{
-    margin : 0; /* 0 - so it sticks to the absoulte left*/
+    margin : 0; /* 0 - so it sticks to the absoulte left */
     padding: 0;
 }
 
@@ -72,7 +72,7 @@ body{
     position: absolute;
     top: calc((100vh - 50vh)/2); /* 10rem we have to subtract beciuse that is default margin of 10rem so just 100vh/2 doesnt actually bring it in centre now this is most efficient way*/
     left: calc((100vw - 45vw)/2);
-    display: none; /* because colors iske andar lagane hai nad by defaut we dont want to see it*/
+    display: none; /* because we have to put colors inside this and by defaut we dont want to see it*/
     /* to bring it in center we use 50 vh  50 vp but not directly we have to use 100-50vh and 100-50vp but for this we need the calc method in css */
     /* position absolute makes an elements fixed irrespective of screen movement or any scrolling */
 }

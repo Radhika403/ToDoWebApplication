@@ -24,7 +24,7 @@ let ticketsArr = [];
 for(let i=0; i<toolBoxColors.length; i++){
     toolBoxColors[i].addEventListener('click',function(e) {
         let currentToolBoxColor = toolBoxColors[i].classList[0];
-        //0 because pehle red/tyellow hai phir color hai in class because likha aise hai class index.html
+        //0 because pehle red/yellow hai phir color hai in class because likha aise hai class index.html
         
         let filteredTickets = ticketsArr.filter(function(ticketObj){
             return currentToolBoxColor === ticketObj.ticketColor;
@@ -208,7 +208,6 @@ function handleColor(ticket, id){
 
     
 }
-
 
 //IMPLEMENTING LOCAL STORAGE - done in create ticket - now getting all tickets from local storage
 if(localStorage.getItem("tickets")){
